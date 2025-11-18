@@ -1,14 +1,14 @@
 /* AI Testing - Premium Bootstrap Theme */
 
 :root {
-  --primary-color: #e73c3e;
-  --secondary-color: #2b2d31;
-  --dark-color: #1c1d21;
-  --footer-bg: #2b2d31;
+  --primary-color: #0d274c;
+  --secondary-color: #1a3a5c;
+  --dark-color: #081829;
+  --footer-bg: #0d274c;
   --light-color: #f8f9fa;
-  --accent-color: #e73c3e;
-  --gradient-1: linear-gradient(135deg, #e73c3e 0%, #c93133 100%);
-  --gradient-2: linear-gradient(135deg, #1c1d21 0%, #2b2d31 100%);
+  --accent-color: #2563eb;
+  --gradient-1: linear-gradient(135deg, #0d274c 0%, #1a3a5c 100%);
+  --gradient-2: linear-gradient(135deg, #081829 0%, #0d274c 100%);
   --text-dark: #2c3e50;
   --text-light: #6c757d;
   --border-color: rgba(255, 255, 255, 0.1);
