@@ -1,0 +1,194 @@
+Build a complete, SEO-optimized, enterprise-grade Bootstrap 5 website for the subdomain:
+https://ai-testing.acadifysolution.com/
+
+Domain Purpose:
+This website is dedicated ONLY to “AI Model Testing, Evaluation, and Structured Feedback Services.” It must rank for all AI-related keywords and cover all industries and AI modalities. The design style should be inspired by https://acadifysolution.com/ (similar colors, spacing, typography, layout feel), but the site must have a unique and premium AI identity.
+
+Tech Requirements:
+- Use HTML + CSS + Bootstrap 5
+- Use AOS (Animate on Scroll)
+- Fully mobile responsive
+- Clean, modular code
+- SEO-optimized headings
+- Include metadata for SEO
+- Include placeholder images/icons
+- Do NOT include blogs (blogs will be on a different subdomain)
+
+------------------------------------
+### PAGES TO BUILD
+------------------------------------
+
+## 1. HOME PAGE
+Sections:
+- Hero Section:
+  Title: “Enterprise-Grade AI Model Testing, Evaluation & Structured Feedback”
+  Subtitle: “We test LLMs, chatbots, recommender systems, automation agents, and enterprise AI models for reliability, accuracy, safety, and real-world performance.”
+  Buttons: “Get Free Evaluation” and “Contact Team”
+- Trusted By / Placeholder Logos
+- What We Do (3-6 cards)
+- Why Choose Us (Accuracy, Reliability, Safety, Edge-Case Testing, Bias Detection)
+- Our Core Services (cards linking to Services page)
+- AI Modalities We Test (Text, Image, Video, Audio, Code, Automation)
+- Industries We Serve (FinTech, Healthcare, Manufacturing, etc.)
+- Process Overview (4-step workflow)
+- Testimonials placeholders
+- Contact CTA
+- Footer
+
+## 2. ABOUT PAGE
+- About the AI Testing Division
+- Mission / Vision
+- Why AI Testing Is Essential
+- What Makes Us Different
+- Our Team placeholder
+
+## 3. SERVICES PAGE (Main)
+- Intro section for services
+- Service cards linking to detailed sub-service page
+- CTA: Request Evaluation
+
+## 4. SERVICES – SUB-PAGE (ALL AI TESTING SERVICES)
+Create a grid or list with detailed descriptions for each:
+- LLM Testing
+- Chatbot Evaluation
+- Model Accuracy Scoring
+- Bias & Fairness Testing
+- Hallucination Detection
+- Prompt–Response Evaluation
+- Edge-Case & Failure-Mode Testing
+- Reliability & Stress Testing
+- Safety & Compliance Checks
+- Behavior Testing
+- Reinforcement Feedback Loops
+- Human-in-the-loop Evaluation
+- Multi-language Testing
+- Dataset Quality Review
+- Output Consistency Testing
+Each service includes:
+- Title
+- Icon
+- 2–4 sentence description
+- CTA Button
+
+## 5. PROCESS / HOW IT WORKS PAGE
+4-step or 5-step process:
+1. Model Analysis & Objective Definition
+2. Multi-Layer Testing (accuracy, safety, bias, UX)
+3. Structured Feedback & Scoring Matrix
+4. Improvement Roadmap
+5. Ongoing Monitoring (optional)
+Include icons, timeline layout, and CTA.
+
+------------------------------------
+### AI MODALITIES SECTION
+------------------------------------
+
+## 6. ALL AI MODALITIES PAGE (Overview)
+Intro + cards for each modality.
+
+## 7. MODALITY SUB-PAGES (Each page must be individual)
+### Build pages for:
+- Text AI (LLMs, Chatbots, NLP)
+- Image AI
+- Video AI
+- Audio AI
+- Code AI
+- Automation AI (Agents, RPA)
+
+Each page includes:
+- Title hero section
+- What we test
+- Typical failure modes
+- Benefits of testing
+- Key industries using this modality
+- CTA
+
+------------------------------------
+### INDUSTRIES SECTION
+------------------------------------
+
+## 8. INDUSTRIES PAGE (Overview)
+Create a grid of industries linking to sub-pages.
+
+## 9. INDUSTRY SUB-PAGES (Each MUST be separate)
+Build pages for:
+- FinTech AI
+- Healthcare AI
+- Manufacturing AI
+- Education AI
+- Legal AI
+- Customer Support AI
+- E-Commerce AI
+- HR & Recruitment AI
+- Cybersecurity AI
+- Marketing AI
+- Video AI Industry Use Cases
+- Audio AI Industry Use Cases
+- Text AI Industry Use Cases
+- Image AI Industry Use Cases
+- Code AI Industry Use Cases
+- Automation AI Industry Use Cases
+
+Each page must contain:
+- Hero title
+- Pain points in that industry
+- What can go wrong without AI testing
+- How our AI testing solves the problems
+- 3–6 example use cases
+- CTA: Request Evaluation
+
+------------------------------------
+### 10. ABOUT US PAGE
+(Separate from About)
+- Why this division was created
+- What makes us unique
+- Our technical capabilities
+- Our philosophy
+- Partner/Client placeholder section
+
+------------------------------------
+### 11. CONTACT PAGE
+- Contact form:
+  (Name, Email, Phone, Company, Message)
+- Office Address (same as Acadify)
+- Map embed placeholder
+- CTA
+
+------------------------------------
+### NAVIGATION MENU (You may optimize)
+------------------------------------
+Home
+About
+Services
+   - All AI Testing Services
+Process
+Industries
+   - All industry sub-pages
+AI Modalities
+   - All modality sub-pages
+About Us
+Contact
+
+------------------------------------
+### FOOTER
+------------------------------------
+- Company information
+- Quick links for all pages
+- Social icons
+- Email + phone
+- Copyright
+
+------------------------------------
+### ADDITIONAL NOTES
+------------------------------------
+- Use clean, premium AI-styled design
+- Ensure easy SEO indexing
+- Use clear H1, H2, H3 for all pages
+- Include schema markup placeholders
+- Include breadcrumbs for SEO for all sub-pages
+- Make website extremely lightweight and fast
+- Use consistent components across pages
+
+------------------------------------
+End of prompt.
+Generate the entire multi-page Bootstrap 5 website based on all instructions above.
