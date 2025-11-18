@@ -8,16 +8,23 @@ Dedicated to AI model testing, evaluation, and structured feedback services for 
 
 ## Technology Stack
 - **HTML5** - Semantic, SEO-optimized markup
-- **CSS3** - Custom styling with Bootstrap framework
+- **CSS3** - Custom Acadify-branded styling with Bootstrap framework
 - **Bootstrap 5.3** - Responsive grid and components
 - **Bootstrap Icons** - Icon library
 - **AOS (Animate on Scroll)** - Smooth scroll animations
-- **Python HTTP Server** - Static file serving (development)
+- **Python HTTP Server** - Static file serving (development on port 5000)
+
+## Design Theme
+- **Primary Color**: #e73c3e (Acadify Red)
+- **Secondary Color**: #2b2d31 (Dark Gray)
+- **Footer Background**: #2b2d31 (matching Acadify Solution design)
+- Professional, modern design with gradients and smooth transitions
+- Footer matches the exact design from acadifysolution.com
 
 ## Project Structure
 ```
 /
-├── index.html                  # Homepage
+├── index.html                  # Homepage with hero image
 ├── about.html                  # About page
 ├── about-us.html               # Company philosophy & capabilities
 ├── services.html               # Main services page
@@ -26,8 +33,32 @@ Dedicated to AI model testing, evaluation, and structured feedback services for 
 ├── contact.html                # Contact form & information
 ├── modalities.html             # AI modalities overview
 ├── industries.html             # Industries overview
-├── css/
-│   └── style.css               # Custom CSS styling
+├── assets/
+│   ├── css/
+│   │   └── style.css           # Custom Acadify-themed CSS
+│   ├── images/                 # Placeholder for images
+│   └── js/                     # Placeholder for custom JS
+├── components/
+│   └── footer.html             # Reusable footer component
+├── pages/
+│   ├── services/               # 15 individual service pages
+│   │   ├── llm-testing.html
+│   │   ├── chatbot-evaluation.html
+│   │   ├── model-accuracy-scoring.html
+│   │   ├── bias-testing.html
+│   │   ├── hallucination-detection.html
+│   │   ├── edge-case-testing.html
+│   │   ├── safety-compliance.html
+│   │   ├── reliability-testing.html
+│   │   ├── human-loop-evaluation.html
+│   │   ├── multilang-testing.html
+│   │   ├── dataset-quality.html
+│   │   ├── output-consistency.html
+│   │   ├── prompt-response.html
+│   │   ├── behavior-testing.html
+│   │   └── reinforcement-feedback.html
+│   ├── industries/             # Industry-specific pages
+│   └── modalities/             # AI modality pages
 ├── modalities/                 # 6 modality sub-pages
 │   ├── text-ai.html
 │   ├── image-ai.html
@@ -160,12 +191,23 @@ python -m http.server 5000
 Access the website at: http://localhost:5000 or via the Replit webview.
 
 ## Design Inspiration
-The website design is inspired by acadifysolution.com with:
-- Similar color palette (blues, professional tones)
-- Clean, modern spacing
-- Professional typography
-- Premium feel with gradients
-- Unique AI-focused identity
+The website design matches acadifysolution.com exactly with:
+- **Exact color palette**: Primary red (#e73c3e), dark backgrounds (#2b2d31, #1c1d21)
+- **Footer design**: Matches reference image with 4-column layout (Logo, Services, Industries, Company)
+- **Contact section**: Dark strip with email, locations (Vadodara, Delhi, Agartala, Patna), and social icons
+- **Typography**: Clean, professional fonts with proper hierarchy
+- **Spacing**: Professional margins and padding throughout
+- **Images**: Placeholder images using placehold.co service
+
+## Recent Changes (November 18, 2025)
+- ✅ Updated entire color scheme to match Acadify Solution branding
+- ✅ Redesigned footer to match reference image exactly
+- ✅ Created 15 individual service pages with consistent design
+- ✅ Reorganized folder structure for professional development
+- ✅ Added placeholder images throughout the site
+- ✅ Cleaned up unnecessary files and optimized code
+- ✅ Updated all HTML files to use new CSS path (assets/css/style.css)
+- ✅ Configured Python HTTP server on port 5000
 
 ## Performance
 - ✅ Lightweight (no heavy dependencies)
