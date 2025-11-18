@@ -224,6 +224,7 @@ Access the website at: http://localhost:5000 or via the Replit webview.
 - ✅ Removed text from logo (clean logo-only design)
 - ✅ Enhanced dropdown menus with max-height and smooth scrolling
 - ✅ Added hover pause effect on auto-slider for better user interaction
+- ✅ Cleaned up Industries dropdown - removed AI modality items (now only 12 actual industry sectors)
 
 ### Previous Updates
 - ✅ Added dummy images: logo, hero images, and industry-specific images
