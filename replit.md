@@ -1,6 +1,19 @@
 ### Overview
 This project is an enterprise-grade, SEO-optimized Bootstrap 5 website for Acadify Solution, specializing in AI Model Testing, Evaluation, and Structured Feedback Services. It supports various AI models across 15+ services and 16 industries. Hosted at `ai-testing.acadifysolution.com`, the website serves as a comprehensive digital platform showcasing Acadify's expertise in AI quality assurance with a professional UI/UX and a robust folder structure.
 
+### Recent Changes
+**November 19, 2025:**
+- **Modalities Pages Enhancement:** Removed breadcrumb components from all 6 modalities pages (video-ai, image-ai, code-ai, automation-ai, audio-ai) for cleaner navigation and improved user experience
+- **Process Page Redesign:** Completely redesigned `process.html` with enhanced professional design featuring:
+  - Comprehensive SEO optimization with Schema.org HowTo structured data markup
+  - Expanded 5-step methodology presentation with detailed visual cards and gradient backgrounds
+  - New FAQ section with 8 common questions about AI testing process
+  - Enhanced timeline section with detailed project scope descriptions
+  - Professional call-to-action sections with improved conversion elements
+  - Statistics showcase highlighting company achievements (10,000+ models tested, 99.9% detection rate)
+  - Improved responsive design with AOS animations and modern UI patterns
+  - Enhanced meta tags and Open Graph properties for better social sharing
+
 ### User Preferences
 I prefer the agent to be highly autonomous for initial tasks but to **ask for confirmation before making any significant changes or architectural decisions**. I appreciate **detailed explanations** for complex solutions and **clear, concise summaries** for routine updates. Ensure all code is **well-commented** and follows **best practices for maintainability and scalability**. Do not make changes to the `assets/images/` folder unless specifically instructed, as it contains critical visual assets.
 
