@@ -326,21 +326,56 @@ section {
 }
 
 .card-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background: var(--gradient-1);
-  border-radius: 50%;
+  border-radius: 20px;
   display: grid;
   place-items: center;
   margin: 0 auto 1.5rem;
   color: white;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(13, 38, 75, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-icon::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.4), rgba(13, 38, 75, 0.2));
+  border-radius: 22px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.service-feature:hover .card-icon {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(13, 38, 75, 0.4);
+}
+
+.service-feature:hover .card-icon::before {
+  opacity: 1;
 }
 
 .card-icon .bi {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: white !important;
   line-height: 1;
   vertical-align: 0 !important;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .card-body {
