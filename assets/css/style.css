@@ -494,6 +494,46 @@ section {
   color: var(--text-dark);
 }
 
+.industry-card-hover {
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.industry-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(13, 39, 76, 0.2);
+}
+
+.industry-card-hover .card-img-top {
+  transition: all 0.3s ease;
+}
+
+.industry-card-hover:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Statistics Cards */
+.stat-card {
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  background: var(--light-color);
+}
+
+.stat-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
 /* Breadcrumb */
 /* Professional Breadcrumb Navigation */
 .breadcrumb-navigation {
