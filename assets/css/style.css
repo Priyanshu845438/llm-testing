@@ -534,6 +534,45 @@ section {
   font-size: 1rem;
 }
 
+/* Icon Box */
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+/* Use Case Cards */
+.use-case-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.use-case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(13, 39, 76, 0.15);
+}
+
+.use-case-card i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.use-case-card p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
 /* Breadcrumb */
 /* Professional Breadcrumb Navigation */
 .breadcrumb-navigation {
