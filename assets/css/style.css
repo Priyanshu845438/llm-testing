@@ -455,19 +455,118 @@ section {
 }
 
 /* Breadcrumb */
+/* Professional Breadcrumb Navigation */
+.breadcrumb-navigation {
+  background: white;
+  padding: 1.5rem 0;
+  margin-top: 70px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(13, 38, 75, 0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.breadcrumb-modern {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.breadcrumb-modern li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.breadcrumb-modern li:not(:last-child)::after {
+  content: "/";
+  color: var(--text-light);
+  margin-left: 0.5rem;
+  font-weight: 300;
+}
+
+.breadcrumb-modern a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.breadcrumb-modern a:hover {
+  color: var(--primary-color);
+  background: rgba(13, 38, 75, 0.05);
+}
+
+.breadcrumb-modern a i {
+  font-size: 1rem;
+}
+
+.breadcrumb-modern .active {
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Breadcrumb for Dark Backgrounds (Hero Sections) */
+.service-detail-header .breadcrumb,
 .breadcrumb {
   background: transparent;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
 }
 
-.breadcrumb-item a {
-  color: var(--primary-color);
+.service-detail-header .breadcrumb-item,
+.breadcrumb .breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.service-detail-header .breadcrumb-item + .breadcrumb-item::before,
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0.5rem;
+  font-weight: 300;
+}
+
+.service-detail-header .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
-.breadcrumb-item.active {
-  color: var(--text-light);
+.service-detail-header .breadcrumb-item a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.service-detail-header .breadcrumb-item.active {
+  color: white;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
 }
 
 /* CTA Section - Modern Design */

@@ -97,8 +97,8 @@ function buildBreadcrumb(basePath) {
         const path = window.location.pathname;
         const segments = path.split('/').filter(segment => segment !== '');
         
-        // Home link
-        let breadcrumbHTML = `<li class="breadcrumb-item"><a href="${basePath}/index.html"><i class="bi bi-house-door"></i> Home</a></li>`;
+        // Home link with icon
+        let breadcrumbHTML = `<li><a href="${basePath}/index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>`;
         
         // Build breadcrumb from path
         let currentPath = basePath;
@@ -107,12 +107,12 @@ function buildBreadcrumb(basePath) {
             if (segment.endsWith('.html')) {
                 // Last segment (current page)
                 const pageName = segment.replace('.html', '').replace(/-/g, ' ');
-                breadcrumbHTML += `<li class="breadcrumb-item active" aria-current="page">${capitalizeWords(pageName)}</li>`;
+                breadcrumbHTML += `<li class="active" aria-current="page">${capitalizeWords(pageName)}</li>`;
             } else if (segment !== 'pages') {
                 // Intermediate segments
                 currentPath += '/' + segment;
                 const pageName = segment.replace(/-/g, ' ');
-                breadcrumbHTML += `<li class="breadcrumb-item"><a href="${currentPath}.html">${capitalizeWords(pageName)}</a></li>`;
+                breadcrumbHTML += `<li><a href="${currentPath}.html">${capitalizeWords(pageName)}</a></li>`;
             }
         }
         
