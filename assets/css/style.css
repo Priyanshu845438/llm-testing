@@ -385,6 +385,13 @@ section {
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .step-number {
@@ -435,11 +442,16 @@ section {
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  height: 100%;
 }
 
 .industry-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.industry-card h4 {
+  color: var(--text-dark);
 }
 
 /* Breadcrumb */
@@ -512,19 +524,19 @@ section {
   width: 100%;
   background: white;
   color: var(--primary-color);
-  padding: 20px 40px;
-  border-radius: 12px;
+  padding: 2rem;
+  border-radius: 15px;
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   border: none;
 }
 
 .cta-btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   color: var(--primary-color);
 }
 
@@ -547,26 +559,37 @@ section {
   justify-content: center;
   gap: 0.75rem;
   width: 100%;
-  background: transparent;
-  color: white;
-  padding: 18px 40px;
-  border-radius: 12px;
+  background: white;
+  color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 15px;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  border: 2px solid rgba(255,255,255,0.4);
+  border: 2px solid rgba(13, 38, 75, 0.1);
   transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .cta-btn-secondary:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: white;
-  color: white;
-  transform: translateY(-2px);
+  background: white;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .cta-btn-secondary i {
   font-size: 1.3rem;
+}
+
+.cta-btn-secondary i:last-child {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn-secondary:hover i:last-child {
+  transform: translateX(5px);
 }
 
 @media (max-width: 768px) {
@@ -579,12 +602,12 @@ section {
   }
   
   .cta-btn-primary {
-    padding: 16px 30px;
+    padding: 1.5rem;
     font-size: 1rem;
   }
   
   .cta-btn-secondary {
-    padding: 14px 30px;
+    padding: 1.5rem;
     font-size: 0.95rem;
   }
 }

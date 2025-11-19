@@ -219,6 +219,11 @@ Access the website at: http://localhost:5000 or via the Replit webview.
 - ✅ Installed Python 3.11 for HTTP server
 - ✅ Configured workflow: Python HTTP server on port 5000 (webview mode)
 - ✅ Fixed image paths in all 15 service pages (changed from `assets/images/` to `../../assets/images/`)
+- ✅ **Standardized box/card styling across all sections:**
+  - CTA buttons (both primary and secondary) - now white cards with consistent styling
+  - Process steps cards - added hover effects
+  - Industry cards - maintained consistent styling
+  - All sections now share: 15px border-radius, 2rem padding, same box-shadow, same hover effects
 - ✅ Verified website loads correctly across all page types:
   - Homepage, About, Services, Industries, Modalities
   - All 15 service detail pages
