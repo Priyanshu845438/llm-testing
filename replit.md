@@ -35,13 +35,9 @@ A professional, organized structure includes `index.html`, `about.html`, `servic
 - **Statistics Section:** Added impressive stats showcase (18+ Industries, 500+ Projects, 100% Compliance, 24/7 Support)
 - **Card-Based Layout:** Transformed industry listings into professional Bootstrap card components with images
 - **Industry Images:** Integrated existing industry images (fintech, healthcare, legal, retail, etc.) into card design
-- **Categorized Sections:** Organized industries into logical groups:
-  - Financial & Business Services (FinTech, Legal, Real Estate)
-  - Healthcare & Life Sciences
-  - Retail & Commerce (E-Commerce, Retail)
-  - Technology & Innovation (Cybersecurity, Manufacturing)
-  - Business Operations (Customer Support, HR, Marketing)
-  - Education & Learning
+- **Clean Grid Layout:** All 12 industries displayed in clean 3-column, 4-row grid (col-lg-4)
+  - Removed all category headings for cleaner, more uniform appearance
+  - Industries: FinTech, Healthcare, E-Commerce, Legal, Cybersecurity, Manufacturing, Real Estate, Retail, Customer Support, HR, Marketing, Education
 - **Benefits Section:** Added "Why Industry-Specific Testing Matters" with 4 key value propositions
 - **Process Section:** Added "Our Industry-Focused Testing Approach" with 4-step methodology
 - **Enhanced CSS:** Added new styles for `industry-card-hover`, `stat-card`, with hover effects and image zoom animations
