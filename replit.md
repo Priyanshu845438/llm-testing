@@ -229,6 +229,7 @@ Access the website at: http://localhost:5000 or via the Replit webview.
   - Home icon with proper spacing and separators
   - Hover effects with background highlights
   - Glassmorphism design for breadcrumbs in dark hero sections
+  - Added breadcrumbs to ALL pages (Services, Industries, Modalities, Process, Contact, About, and all sub-pages)
   - Consistent styling across all pages
 - ✅ Verified website loads correctly across all page types:
   - Homepage, About, Services, Industries, Modalities
