@@ -1165,3 +1165,53 @@ footer .logo-section p {
 .bg-light-gradient {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
+
+/* Modality Cards - Professional Design */
+.modality-card {
+  border: none;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+
+.modality-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-1);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.modality-card:hover::before {
+  transform: scaleX(1);
+}
+
+.modality-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 60px rgba(13, 39, 76, 0.2);
+}
+
+.modality-card .card-body {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modality-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.modality-card .card-text {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
