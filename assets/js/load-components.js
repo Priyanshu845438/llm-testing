@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const headerPlaceholder = document.getElementById('header-placeholder');
     const footerPlaceholder = document.getElementById('footer-placeholder');
     const ctaPlaceholder = document.getElementById('cta-placeholder');
+    const breadcrumbPlaceholder = document.getElementById('breadcrumb-placeholder');
     
     const basePath = getBasePath();
     
@@ -13,6 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateHeaderLinks(basePath);
             })
             .catch(error => console.error('Error loading header:', error));
+    }
+    
+    if (breadcrumbPlaceholder) {
+        fetch(`${basePath}/components/breadcrumb.html`)
+            .then(response => response.text())
+            .then(data => {
+                breadcrumbPlaceholder.innerHTML = data;
+                // Initialize breadcrumb after insertion
+                buildBreadcrumb(basePath);
+            })
+            .catch(error => console.error('Error loading breadcrumb:', error));
     }
     
     if (footerPlaceholder) {
@@ -72,5 +84,38 @@ function updateFooterLinks(basePath) {
             const src = img.getAttribute('src');
             img.setAttribute('src', '../..' + src);
         });
+    }
+}
+
+function capitalizeWords(str) {
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+function buildBreadcrumb(basePath) {
+    const breadcrumbList = document.getElementById('breadcrumb-list');
+    if (breadcrumbList) {
+        const path = window.location.pathname;
+        const segments = path.split('/').filter(segment => segment !== '');
+        
+        // Home link
+        let breadcrumbHTML = `<li class="breadcrumb-item"><a href="${basePath}/index.html"><i class="bi bi-house-door"></i> Home</a></li>`;
+        
+        // Build breadcrumb from path
+        let currentPath = basePath;
+        for (let i = 0; i < segments.length; i++) {
+            const segment = segments[i];
+            if (segment.endsWith('.html')) {
+                // Last segment (current page)
+                const pageName = segment.replace('.html', '').replace(/-/g, ' ');
+                breadcrumbHTML += `<li class="breadcrumb-item active" aria-current="page">${capitalizeWords(pageName)}</li>`;
+            } else if (segment !== 'pages') {
+                // Intermediate segments
+                currentPath += '/' + segment;
+                const pageName = segment.replace(/-/g, ' ');
+                breadcrumbHTML += `<li class="breadcrumb-item"><a href="${currentPath}.html">${capitalizeWords(pageName)}</a></li>`;
+            }
+        }
+        
+        breadcrumbList.innerHTML = breadcrumbHTML;
     }
 }
