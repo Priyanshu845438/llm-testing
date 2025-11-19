@@ -27,3 +27,18 @@ A professional, organized structure includes `index.html`, `about.html`, `servic
 - **Bootstrap Icons:** Icon library for visual elements.
 - **AOS (Animate on Scroll):** JavaScript library for scroll animations.
 - **Python HTTP Server:** Used for serving static files during development.
+
+### Recent Changes
+**November 19, 2025 - Replit Environment Setup:**
+- Installed Python 3.11 for serving the static website
+- Configured workflow "Web Server" to run `python3 -m http.server 5000` on port 5000
+- Set up deployment configuration for static hosting (deployment target: static, public directory: root)
+- Verified all pages load correctly including component-based navigation, headers, and footers
+- Confirmed path adjustments work correctly for both root-level and nested pages in `/pages/` subdirectories
+- Website successfully running on Replit with all 47 pages functional
+
+### Replit Configuration
+- **Workflow:** "Web Server" runs Python HTTP server on port 5000 (webview output type)
+- **Deployment:** Static deployment configured with public directory set to root (.)
+- **Python Version:** Python 3.11
+- **Port Configuration:** Frontend serves on 0.0.0.0:5000 for Replit proxy compatibility
