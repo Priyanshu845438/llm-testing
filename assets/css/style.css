@@ -330,21 +330,22 @@ section {
   height: 80px;
   background: var(--gradient-1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   margin: 0 auto 1.5rem;
   color: white;
-  font-size: 2rem;
 }
 
-.card-icon i,
 .card-icon .bi {
   font-size: 2.5rem;
   color: white !important;
+  line-height: 1;
+  display: inline-flex;
+}
+
+.card-icon .bi::before {
   display: block;
-  line-height: 80px;
-  height: 80px;
+  line-height: 1;
   vertical-align: middle;
 }
 
