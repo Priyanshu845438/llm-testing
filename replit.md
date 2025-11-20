@@ -3,19 +3,31 @@ This project is an enterprise-grade, SEO-optimized Bootstrap 5 website for Acadi
 
 ### Recent Changes
 **November 20, 2025:**
+- **Global Pricing Update:** Reduced all pricing to be affordable and globally accessible:
+  - Per-Feedback: $8-$35 (reduced from $15-$75) for basic/detailed/comprehensive feedback
+  - Hourly: $30-$40 (reduced from $65-$85) for standard/bulk/dedicated hours
+  - Industrial Projects: $1,200-$15,000 (reduced from $5,000-$80,000) for small/medium/large projects
+  - Bug Priority: $12-$75 (reduced from $25-$200) for low/medium/high/critical priority bugs
+- **Footer Navigation Overhaul:** Fixed broken links and improved structure:
+  - Removed deleted "INDUSTRIES" section and broken /all-services.html link
+  - Added new "AI MODALITIES" section featuring Code AI (Our Specialty), Text AI, Image AI, Video AI, Audio AI, and All Modalities links
+  - Updated "All Services" link to point to /services.html
+  - Added "Pricing" link to Company section
+  - Fixed Bootstrap grid layout (all columns now col-lg-3 for proper 4-column layout)
+  - Updated first service link to "Code LLM Testing" to emphasize code AI focus
+  - All changes reviewed and approved by architect
 - **Complete Website Refocus to Code AI Specialization:**
   - **Removed Industries Section:** Deleted entire Industries dropdown, industries.html, and all 12 industry pages (fintech, healthcare, manufacturing, education, legal, customer-support, ecommerce, hr, cybersecurity, marketing, retail, real-estate)
   - **Streamlined Services:** Removed 3 service pages (dataset-quality.html, behavior-testing.html, human-loop-evaluation.html) and all-services.html
   - **Updated Navigation:** Removed Industries dropdown from header, updated Services dropdown to show "Code AI Testing Services"
-  - **Homepage Transformation:** Complete rewrite focusing on GitHub Copilot, OpenAI Codex, GPT models, and Perplexity Sonar testing with SEO optimization
+  - **Homepage Transformation:** Complete rewrite focusing on GitHub Copilot, OpenAI Codex, GPT models, Magic.dev, and Perplexity Sonar testing with SEO optimization
   - **Core Pages Rewritten:** About, Services, and Process pages now emphasize code AI platform testing specialization
-  - **Pricing Updated:** Updated pricing page to focus on code AI testing packages
   - **Modality Pages:** Updated all 6 modality pages with Code AI highlighted as "Our Specialty" (prominent border, badge, enhanced content)
   - **Service Pages:** Updated all 12 remaining service pages with code AI context and examples
-  - **SEO Enhancements:** Added code AI-focused keywords throughout (Copilot testing, Codex evaluation, GPT code testing, Sonar validation)
+  - **SEO Enhancements:** Added code AI-focused keywords throughout (Copilot testing, Codex evaluation, GPT code testing, Sonar validation, Magic.dev testing)
   - **Readability Improvements:** Added transition words (moreover, therefore, furthermore, thus, consequently) across all pages
   - **Contact Details Updated:** Calendly widget integration, removed location map section
-  - All changes reviewed and approved by architect
+  - **Platform References:** Replaced all instances of "PortalCode" with "Magic.dev" across the website
 
 **November 19, 2025:**
 - **Process Page Refinement:** Updated `process.html` with lighter, more professional design:
