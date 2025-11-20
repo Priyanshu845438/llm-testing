@@ -1,0 +1,126 @@
+<!-- 
+  ANALYTICS TRACKING CODE TEMPLATE
+  Once you have your GA4 Measurement ID and Google Search Console verification code,
+  add this code to the <head> section of ALL your HTML pages
+-->
+
+<!-- Google Analytics 4 -->
+<!-- STEP 1: Replace GA4_MEASUREMENT_ID below with your actual ID (format: G-XXXXXXXXXX) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA4_MEASUREMENT_ID', {
+    'send_page_view': true,
+    'cookie_domain': 'ai-testing.acadifysolution.com',
+    'cookie_flags': 'SameSite=None;Secure'
+  });
+</script>
+
+<!-- Google Search Console Verification -->
+<!-- STEP 2: Replace YOUR_VERIFICATION_CODE with the code provided by Google Search Console -->
+<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+
+<!-- Event Tracking Script (Add before closing </body> tag) -->
+<script>
+// Track CTA Button Clicks
+document.addEventListener('DOMContentLoaded', function() {
+  // Track contact/calendly CTAs
+  document.querySelectorAll('a[href*="contact"], a[href*="calendly"]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      gtag('event', 'cta_click', {
+        'event_category': 'engagement',
+        'event_label': this.textContent.trim(),
+        'value': 1
+      });
+    });
+  });
+
+  // Track Email Clicks
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      gtag('event', 'email_click', {
+        'event_category': 'engagement',
+        'event_label': this.getAttribute('href'),
+        'value': 2
+      });
+    });
+  });
+
+  // Track Phone Clicks
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      gtag('event', 'phone_click', {
+        'event_category': 'engagement',
+        'event_label': this.getAttribute('href'),
+        'value': 3
+      });
+    });
+  });
+
+  // Track Calendly Clicks (High Value)
+  document.querySelectorAll('a[href*="calendly.com"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      gtag('event', 'calendly_click', {
+        'event_category': 'conversion',
+        'event_label': 'Book Consultation',
+        'value': 10
+      });
+    });
+  });
+
+  // Track Service Page Views
+  if (window.location.pathname.includes('/pages/services/')) {
+    gtag('event', 'service_page_view', {
+      'event_category': 'engagement',
+      'event_label': document.title,
+      'value': 1
+    });
+  }
+
+  // Track Pricing Page Engagement (High Intent)
+  if (window.location.pathname.includes('pricing')) {
+    gtag('event', 'pricing_page_view', {
+      'event_category': 'high_intent',
+      'event_label': 'Pricing Page',
+      'value': 5
+    });
+  }
+});
+</script>
+
+<!--
+  IMPLEMENTATION INSTRUCTIONS:
+  
+  1. Get your GA4 Measurement ID:
+     - Go to analytics.google.com
+     - Create property: "AI Testing - Acadify Solution"
+     - Copy your Measurement ID (G-XXXXXXXXXX)
+     - Replace "GA4_MEASUREMENT_ID" in this file (both occurrences)
+  
+  2. Get your Google Search Console verification code:
+     - Go to search.google.com/search-console
+     - Add property: https://ai-testing.acadifysolution.com
+     - Choose "HTML tag" verification
+     - Copy the content="..." value
+     - Replace "YOUR_VERIFICATION_CODE" above
+  
+  3. Add to all pages:
+     - Copy the GA4 and GSC code (in <head> section)
+     - Copy the Event Tracking script (before </body> tag)
+     - Add to: index.html, services.html, about.html, pricing.html, 
+       contact.html, process.html, modalities.html, and all pages in 
+       /pages/services/ and /pages/modalities/
+  
+  4. Test your setup:
+     - Visit your website
+     - Go to GA4 → Reports → Realtime
+     - You should see your visit within 30 seconds
+     - Click a CTA button and verify event appears in Realtime
+  
+  5. Submit sitemap:
+     - Once verified in GSC, go to Sitemaps
+     - Add: sitemap.xml
+     - Click Submit
+-->
