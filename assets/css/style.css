@@ -954,6 +954,12 @@ footer .logo-section p {
   font-size: 0.9rem;
 }
 
+/* Trusted By Section - Simple Design */
+.trusted-by-section {
+  background: var(--primary-color);
+  padding: 60px 0;
+}
+
 /* Logo Grid - Auto Slider */
 .logo-slider-wrapper {
   overflow: hidden;
@@ -971,6 +977,16 @@ footer .logo-section p {
   width: 100px;
   z-index: 2;
   pointer-events: none;
+}
+
+.trusted-by-section .logo-slider-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--primary-color), transparent);
+}
+
+.trusted-by-section .logo-slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--primary-color), transparent);
 }
 
 .logo-slider-wrapper::before {
