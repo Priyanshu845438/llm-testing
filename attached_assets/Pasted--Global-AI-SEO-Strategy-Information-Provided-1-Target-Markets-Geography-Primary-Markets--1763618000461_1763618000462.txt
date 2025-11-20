@@ -1,0 +1,118 @@
+# Global AI SEO Strategy – Information Provided
+
+# 1. Target Markets & Geography
+Primary Markets:
+- United States
+- United Kingdom
+- Canada
+- Europe (Germany, France, Netherlands, Nordics)
+- India
+- Singapore
+- Australia
+
+Languages:
+- English (primary)
+- Future optional: German, French, Spanish, Japanese
+
+# 2. Ideal Customers
+Decision Makers:
+- CTOs
+- Heads of AI / AI Engineering Managers
+- Product Managers (AI/ML)
+- Chief Data Scientists
+- QA Directors
+- AI Governance & Compliance Teams
+
+Company Size:
+- Funded AI startups
+- Mid-size AI product companies
+- Large enterprise companies with AI deployments
+- SaaS companies using LLMs, chatbots, automation models
+
+AI Platforms They Use:
+- OpenAI (GPT series)
+- Anthropic Claude
+- Google Gemini
+- Azure OpenAI
+- AWS Bedrock
+- Meta Llama
+- Custom internal fine-tuned models
+- Multi-modal AI systems
+
+# 3. Competitors
+Direct Competitors:
+- LXT AI
+- Qualitest
+- QASource
+- Testriq
+- Qualizeal
+
+Indirect Competitors:
+- Testlio
+- Global QA companies adding basic AI testing
+
+Benchmark Websites (ranking for similar keywords):
+- lxt.ai/services/ai-model-evaluation
+- qualitestgroup.com/solutions/model-evaluation
+- qasource.com/artificial-intelligence-testing
+
+Our Edge:
+- We offer a dedicated AI Testing & Evaluation division, not a generic QA category.
+
+# 4. Business Goals & KPIs
+Primary Goals:
+- Global authority for “AI Model Testing & Evaluation”
+- Rank page 1 for all major AI testing keywords
+- Capture consistent enterprise AI leads
+
+Monthly KPIs:
+- 50–100 high-intent leads
+- 10–15 demos booked
+- 3–5 qualified enterprise conversions
+
+Priority:
+- Lead Generation (first)
+- Brand Awareness (secondary)
+
+Deal Size:
+- $4,000–$35,000 per engagement
+
+Sales Cycle:
+- 2–6 weeks
+
+# 5. Resources Available
+Budget:
+- Medium budget for global SEO tools and content
+
+Tools:
+- Ahrefs / Semrush
+- SurferSEO
+- ScreamingFrog
+- ChatGPT for draft content
+
+Content:
+- Technical knowledge provided internally
+- Need SEO writers for refinement of long-form content
+- We will create internal test reports, documentation, and case studies
+
+Technical Team:
+- Full access to developers
+- Fast implementation of SEO or website changes
+
+# 6. Analytics
+Google Analytics:
+- GA4 setup planned
+
+Google Search Console:
+- Will set up for:
+  - Main domain
+  - Subdomain
+  - Blog subdomain (future)
+
+Traffic:
+- New subdomain starting from zero
+- Expected growth to 10,000+ monthly organic visits in 6–12 months
+
+# IMPORTANT HOSTING NOTE:
+This entire SEO strategy and website optimization plan is for the domain:
+http://ai-testing.acadifysolution.com/

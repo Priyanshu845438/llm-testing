@@ -1,0 +1,27 @@
+# Robots.txt for ai-testing.acadifysolution.com
+# Last updated: November 20, 2025
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow components directory (not standalone pages)
+Disallow: /components/
+
+# Disallow admin/private directories if any exist
+Disallow: /.local/
+Disallow: /tmp/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Allow CSS and JS files for rendering
+User-agent: Googlebot
+Allow: /assets/css/
+Allow: /assets/js/
+
+User-agent: Bingbot
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Sitemap location
+Sitemap: https://ai-testing.acadifysolution.com/sitemap.xml
