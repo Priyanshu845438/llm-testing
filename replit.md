@@ -1,7 +1,22 @@
 ### Overview
-This project is an enterprise-grade, SEO-optimized Bootstrap 5 website for Acadify Solution, specializing in AI Model Testing, Evaluation, and Structured Feedback Services. It supports various AI models across 15+ services and 16 industries. Hosted at `ai-testing.acadifysolution.com`, the website serves as a comprehensive digital platform showcasing Acadify's expertise in AI quality assurance with a professional UI/UX and a robust folder structure.
+This project is an enterprise-grade, SEO-optimized Bootstrap 5 website for Acadify Solution, specializing in **Code AI Testing** for platforms like **GitHub Copilot, OpenAI Codex, GPT models, and Perplexity Sonar**. The website focuses on code generation testing, security validation, and quality assurance for AI-powered development tools. Hosted at `ai-testing.acadifysolution.com`, it serves as the digital platform showcasing Acadify's specialized expertise in code AI testing with a professional UI/UX and structured codebase.
 
 ### Recent Changes
+**November 20, 2025:**
+- **Complete Website Refocus to Code AI Specialization:**
+  - **Removed Industries Section:** Deleted entire Industries dropdown, industries.html, and all 12 industry pages (fintech, healthcare, manufacturing, education, legal, customer-support, ecommerce, hr, cybersecurity, marketing, retail, real-estate)
+  - **Streamlined Services:** Removed 3 service pages (dataset-quality.html, behavior-testing.html, human-loop-evaluation.html) and all-services.html
+  - **Updated Navigation:** Removed Industries dropdown from header, updated Services dropdown to show "Code AI Testing Services"
+  - **Homepage Transformation:** Complete rewrite focusing on GitHub Copilot, OpenAI Codex, GPT models, and Perplexity Sonar testing with SEO optimization
+  - **Core Pages Rewritten:** About, Services, and Process pages now emphasize code AI platform testing specialization
+  - **Pricing Updated:** Updated pricing page to focus on code AI testing packages
+  - **Modality Pages:** Updated all 6 modality pages with Code AI highlighted as "Our Specialty" (prominent border, badge, enhanced content)
+  - **Service Pages:** Updated all 12 remaining service pages with code AI context and examples
+  - **SEO Enhancements:** Added code AI-focused keywords throughout (Copilot testing, Codex evaluation, GPT code testing, Sonar validation)
+  - **Readability Improvements:** Added transition words (moreover, therefore, furthermore, thus, consequently) across all pages
+  - **Contact Details Updated:** Calendly widget integration, removed location map section
+  - All changes reviewed and approved by architect
+
 **November 19, 2025:**
 - **Process Page Refinement:** Updated `process.html` with lighter, more professional design:
   - Added proper top padding (80px margin + 60px section padding) to hero section for better spacing
@@ -34,12 +49,13 @@ The website employs a static site architecture built with HTML5, CSS3, and Boots
 - **SEO:** Semantic HTML, proper heading hierarchy, meta descriptions, and clean URLs.
 
 **Technical Implementations:**
-- **Pages:** The site comprises 48 pages: 9 main pages (Home, About, Services, All Services, Process, Pricing, Contact, Industries, Modalities) and 39 sub-pages (15 Service Detail, 6 AI Modality, 18 Industry).
-- **Features:** Includes an auto-slider for "Trusted By Industry Leaders," scrollable dropdown menus, and consistent CTA components.
+- **Pages:** The site comprises 27 pages: 7 main pages (Home, About, Services, Process, Pricing, Contact, Modalities) and 20 sub-pages (12 Service Detail, 6 AI Modality, 2 Industry).
+- **Features:** Includes an auto-slider for "Trusted By Leading Tech Companies," code AI-focused navigation, Calendly booking integration, and consistent CTA components.
 - **Performance:** Optimized for fast loading times with minimal external dependencies, CDN-hosted libraries, and optimized CSS.
+- **SEO Focus:** Keywords targeting GitHub Copilot, OpenAI Codex, GPT models, Perplexity Sonar, code AI testing, code security validation.
 
 **Folder Structure:**
-The structure includes `index.html`, `about.html`, `services.html`, `all-services.html`, `process.html`, `contact.html`, `industries.html`, `modalities.html` at the root. `assets/` contains `css/`, `images/`, and `js/`. `components/` houses reusable HTML components. `pages/` contains subdirectories for `services/`, `industries/`, and `modalities/` detail pages.
+The structure includes `index.html`, `about.html`, `services.html`, `process.html`, `pricing.html`, `contact.html`, and `modalities.html` at the root. `assets/` contains `css/`, `images/`, and `js/`. `components/` houses reusable HTML components (header, footer, cta, breadcrumb). `pages/` contains subdirectories for `services/` (12 pages) and `modalities/` (6 pages) detail pages.
 
 ### External Dependencies
 - **Bootstrap 5.3:** Responsive framework for UI components.
