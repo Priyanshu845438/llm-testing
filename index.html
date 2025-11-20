@@ -126,6 +126,16 @@
     }
     </script>
     
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
+    
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -154,7 +164,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="hero-image">
-                        <img src="assets/images/Home Hero.webp" alt="AI Testing Services">
+                        <img src="assets/images/Home Hero.webp" alt="AI Testing Services" width="800" height="600" loading="eager">
                     </div>
                 </div>
             </div>
@@ -165,58 +175,47 @@
     <section class="bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2>Trusted by Enterprises Using Leading AI Systems</h2>
+                <h2>Trusted by Leading Enterprises</h2>
+                <p class="text-muted">Companies worldwide trust us to ensure their AI systems are accurate, safe, and compliant</p>
             </div>
             <div class="logo-slider-wrapper" data-aos="fade-up" data-aos-delay="100">
                 <div class="logo-slider">
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">OpenAI GPT</div>
+                        <img src="assets/images/clients/fintech_company_logo.png" alt="FinTech Solutions Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Anthropic Claude</div>
+                        <img src="assets/images/clients/healthtech_company_logo.png" alt="HealthTech Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Google Gemini</div>
+                        <img src="assets/images/clients/autotech_company_logo.png" alt="AutoTech Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Azure OpenAI</div>
+                        <img src="assets/images/clients/enterprise_software_logo.png" alt="Enterprise Software Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">AWS Bedrock</div>
+                        <img src="assets/images/clients/cloud_tech_logo.png" alt="Cloud Technology Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Meta Llama</div>
-                    </div>
-                    <div class="logo-item">
-                        <div class="text-muted fw-bold">GitHub Copilot</div>
-                    </div>
-                    <div class="logo-item">
-                        <div class="text-muted fw-bold">Custom LLMs</div>
+                        <img src="assets/images/clients/ai_analytics_logo.png" alt="AI Analytics Client" width="180" height="135" loading="lazy">
                     </div>
                     <!-- Duplicate items for seamless loop -->
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">OpenAI GPT</div>
+                        <img src="assets/images/clients/fintech_company_logo.png" alt="FinTech Solutions Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Anthropic Claude</div>
+                        <img src="assets/images/clients/healthtech_company_logo.png" alt="HealthTech Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Google Gemini</div>
+                        <img src="assets/images/clients/autotech_company_logo.png" alt="AutoTech Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Azure OpenAI</div>
+                        <img src="assets/images/clients/enterprise_software_logo.png" alt="Enterprise Software Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">AWS Bedrock</div>
+                        <img src="assets/images/clients/cloud_tech_logo.png" alt="Cloud Technology Client" width="180" height="135" loading="lazy">
                     </div>
                     <div class="logo-item">
-                        <div class="text-muted fw-bold">Meta Llama</div>
-                    </div>
-                    <div class="logo-item">
-                        <div class="text-muted fw-bold">GitHub Copilot</div>
-                    </div>
-                    <div class="logo-item">
-                        <div class="text-muted fw-bold">Custom LLMs</div>
+                        <img src="assets/images/clients/ai_analytics_logo.png" alt="AI Analytics Client" width="180" height="135" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -570,16 +569,18 @@
     <div id="footer-placeholder"></div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- AOS Animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script defer>
+        window.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
         });
     </script>
-    <script src="assets/js/load-components.js"></script>
+    <script src="assets/js/load-components.js" defer></script>
 </body>
 </html>

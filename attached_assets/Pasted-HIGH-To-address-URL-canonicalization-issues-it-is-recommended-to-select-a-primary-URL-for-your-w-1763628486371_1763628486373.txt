@@ -1,0 +1,24 @@
+HIGH
+- To address URL canonicalization issues, it is recommended to select a primary URL for your webpage and set up redirects from all other variations to the preferred one.
+- To provide a good user experience, Google recommends that sites should aim for a Largest Contentful Paint duration of 2.5 seconds or less.
+- To improve the website experience for your visitors, it is recommended to eliminate any render-blocking resources on this webpage.
+- Users may abandon pages that take longer than 5 seconds to load, resulting in a potential loss of up to 50% of visitors. Faster loading pages can lead to increased traffic, better conversions, and higher sales.
+- Add a sitemap file to help search engine crawlers index content more thoroughly and quickly.
+- Add a robots.txt file to properly communicate with web crawlers and prevent unwanted access to sensitive content.
+
+MEDIUM
+- Avoid using distorted images, as they can have a negative impact on the user experience.
+- Serve properly sized images to reduce page loading times and to improve user's experience.
+- To provide a good user experience, Google recommends that sites should aim for a First Contentful Paint value of 1.8 seconds or less.
+- Add a Google Analytics script to this website to help in diagnosing potential SEO issues by monitoring site visitors and traffic sources. - ignore this point for now
+- Avoid performance and security issues by adding "rel=noopener" or "rel=noreferrer" to your "target=_blank" links.
+
+LOW
+- Without an SPF record, spammers can easily spoof emails from this domain, potentially leading to compromised email security and deliverability issues.
+- Consider adding the Strict-Transport-Security header to your webpage to ensure that web traffic is encrypted over HTTPS, mitigating the risk of man-in-the-middle attacks and other security threats.
+
+
+----
+
+
+On home page This section should contain logo instead of text: Trusted by Enterprises Using Leading AI Systems (we are startuo so currently I have 3 client but I want to show more so you add safe side few more logo)
