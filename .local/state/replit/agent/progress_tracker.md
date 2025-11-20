@@ -12,3 +12,4 @@
    - Updated office address to: GIDC, Wagodia, Vadodara, Gujarat, India
    - Updated business hours to: Monday - Friday, 9:00 AM - 6:00 PM IST
    - Added response commitment: within 4 business hours
+   - Removed "Our Location" map section
